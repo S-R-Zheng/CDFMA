@@ -218,7 +218,7 @@ def generate_one_chessmix_image(pools, crop_size, n_scale, mirror=True):
     cols = crop_w // block
 
     image_canvas = np.zeros((crop_h, crop_w, 3), dtype=np.uint8)
-    mask_canvas = np.zeros((crop_h, crop_w), dtype=np.uint8)  # 0=ignore
+    mask_canvas = np.zeros((crop_h, crop_w), dtype=np.uint8)  
 
     for row in range(rows):
         active_cols = range(row % 2, cols, 2)
@@ -306,10 +306,7 @@ if __name__ == "__main__":
     n_scale = 2
     patch_overlap = 0.5
     n_images = len(find_loveda_pairs(data_root, split=train_split))
-
     mirror = True
-
-    # LoveDA: 0=ignore, 1..7=classes。
     num_classes = 7
     seed = 42
 

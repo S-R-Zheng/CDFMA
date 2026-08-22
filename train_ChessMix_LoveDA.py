@@ -164,8 +164,6 @@ class LoveDAChessMixDataset(Dataset):
         if mask.ndim == 3:
             mask = mask[..., 0]
         mask = torch.as_tensor(mask, dtype=torch.long)
-
-        # LoveDA/ChessMix: 0=ignore, 1..7=classes -> 255=ignore, 0..6=classes。
         mask = mask - 1
         mask[mask == -1] = self.ignore_index
 

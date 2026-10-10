@@ -161,7 +161,7 @@ def evaluate_metrics(model, loader, device, num_classes, ignore_index=255, norma
 if __name__ == "__main__":
     data_root = "./"
     test_split = "Val"
-    model_path = "./CDFMA_res50UNet_h1024_w1024_bilinearFalse_prob1_LoveDA_200.pth"
+    model_path = "./CDFMA_res50UNet_bins256_h256_w256_bilinearTrue_prob1_LoveDA_200.pth"
 
     img_size = 1024
     num_classes = 7

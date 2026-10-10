@@ -536,7 +536,7 @@ if __name__ == "__main__":
     normalize_mean = (0.485, 0.456, 0.406)
     normalize_std = (0.229, 0.224, 0.225)
 
-    save_path = f"CDFMA_res50UNet_h{local_region_h}_w{local_region_w}_bilinear{use_bilinear}_prob{CDFMA_prob}_LoveDA_{epochs}.pth"
+    save_path = f"CDFMA_res50UNet_bins{num_bins}_h{local_region_h}_w{local_region_w}_bilinear{use_bilinear}_prob{CDFMA_prob}_LoveDA_{epochs}.pth"
     
 
     torch.backends.cudnn.benchmark = True

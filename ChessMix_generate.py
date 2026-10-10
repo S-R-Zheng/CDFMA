@@ -23,11 +23,12 @@ def ensure_dir(path):
     os.makedirs(path, exist_ok=True)
 
 
-def set_random_seed(seed):
+def set_random_seed(seed=None):
+    if seed is None:
+        return
     seed = int(seed)
     random.seed(seed)
     np.random.seed(seed)
-
 
 def as_hw(size):
     if isinstance(size, int):
@@ -308,7 +309,7 @@ if __name__ == "__main__":
     n_images = len(find_loveda_pairs(data_root, split=train_split))
     mirror = True
     num_classes = 7
-    seed = 42
+    seed = None
 
     set_random_seed(seed)
 

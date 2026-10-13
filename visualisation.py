@@ -173,11 +173,11 @@ def colorize_prediction(prediction,palette,):
 
 
 if __name__ == "__main__":
-    image_path = "./2558.png"
-    label_path = "./label_2558.png"
-    model_path = "./CDFMA_res50UNet_h1024_w1024_bilinearFalse_prob1_LoveDA_200.pth"
-    label_output_path = "./visualization_label_2558.png"
-    prediction_output_path = "./visualization_prediction_2558_CDFMA_res50UNet_h1024_w1024_bilinearFalse_prob1_LoveDA_200.png"
+    image_path = "./2721.png"
+    label_path = "./label_2721.png"
+    model_path = "./CDFMA_res50UNet_bins256_h1024_w1024_bilinearFalse_prob1_LoveDA_200.pth"
+    label_output_path = "./visualization_label_2721.png"
+    prediction_output_path = "./visualization_prediction_2721_CDFMA_bins256_h1024_w1024_bilinearFalse_prob1.png"
 
     img_size = 1024
     num_classes = 7

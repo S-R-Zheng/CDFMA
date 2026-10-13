@@ -525,11 +525,11 @@ if __name__ == "__main__":
     vflip_prob = 0.5
 
     num_bins = 256
-    local_region_h = 256
-    local_region_w = 256
+    local_region_h = 1024
+    local_region_w = 1024
     CDFMA_prob = 1
 
-    use_bilinear = True
+    use_bilinear = False
 
     normalize_mean = (0.485, 0.456, 0.406)
     normalize_std = (0.229, 0.224, 0.225)
